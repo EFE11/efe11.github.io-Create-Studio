@@ -1,0 +1,41 @@
+.statistics_section{
+    background-color: $primary-color;
+    .container{
+        width: 70%;
+    }
+}
+
+.stats_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .stats_item{
+        padding: 3rem 0;
+        text-align: center;
+        position: relative;
+        h4{
+            font-size: 0.8rem;
+        }
+        p{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        img{
+            width: 65%;
+            position: absolute;
+            top: 30%;
+            left: 15%;
+            opacity: 0.1;
+        }
+        
+    }
+   
+}
+.stats_item:nth-child(1) img{
+    width: 80%;
+    top: 28%;
+}
+.stats_item:nth-child(2) img{
+    width: 95%;
+    left: 5%;
+}

@@ -1,0 +1,16 @@
+%white-btn{
+    text-decoration: none;
+    padding: 0.8rem 3rem;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .15);
+    color: nth($font-color, 1);
+    font-weight: bold;
+    font-size: 12px;
+}
+%span-style{
+    font-family: nth($fonts,2);
+    text-align: center;
+}
+%h1-style{
+    font-family: nth($fonts,1);
+}

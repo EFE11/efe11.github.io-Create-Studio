@@ -1,0 +1,53 @@
+.devices_section{
+    margin-bottom: 2rem;
+    .container{
+        width: 70%;
+    }
+}
+.devices_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6rem;
+    .devices_images{
+        width: 40%;
+        img{
+            width: 100%;
+        }
+    }
+    .devices_content{
+        width: 50%;
+        margin-right: 2rem;
+        position: relative;
+        h1{
+            &::after{
+                @include create_underline(nth($colors, 3),16%,0,6%);
+            }
+        }
+        p{
+            margin: 2rem 0;
+            line-height: 1.5;
+        }
+        a{
+            @extend %white-btn;
+            &:hover{
+                background-color: nth($colors, 1 );
+            }
+        }
+        ul{
+            margin-bottom: 2rem;
+            list-style: none;
+            li{
+                font-size: 0.8rem;
+                padding: 0.3rem 0;
+                &::before{
+                    content: "\2022";
+                    color:$primary-color;
+                    font-weight: bolder; 
+                    display: inline-block; 
+                    width: 1rem;
+                }
+            }
+        }
+    }
+}

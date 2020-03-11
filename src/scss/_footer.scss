@@ -1,0 +1,101 @@
+footer{
+    background-color: nth($colors, 3);
+    padding-top: 2rem;
+    color: nth($colors, 2);
+    .container{
+        width: 70%;
+    }
+    h3{
+        margin-bottom: 2rem;
+    }
+    .rights{
+        background-color: nth($colors, 4);
+        text-align: center;
+        padding: 0.6rem 0;
+        p{
+            color: nth($font-color, 3);
+            font-size: 0.6rem;
+        }
+    }
+ 
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    .about{
+        width: 30%;
+        position: relative;
+        & >p{
+            margin-bottom: 1.2rem;
+            line-height: 1.5rem;
+        }
+        h3{
+            &::after{
+                @include create_underline(nth($colors, 1),16%,0,8%,0.5%);
+            }
+        }
+        .contact_container{
+            display: flex;
+            margin-bottom: 0.2rem;
+            i{
+                font-size: 0.8rem;
+            }
+            p{
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+                font-size: 0.65rem;
+            }
+        }
+    }
+    .news{
+        width: 24%;
+        position: relative;
+        h3{
+            &::after{
+                @include create_underline(nth($colors, 1),15%,0,10%,0.3%);
+            }
+        }
+        .news_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            .news_content{
+                p{
+                    font-size: 0.72rem;
+                }
+                & > p{
+                    margin-bottom: 0.3rem;
+                }
+            }
+            .news_images{
+                margin-right: 1rem;
+                width: 22%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .gallery{
+        width: 38%;
+        position: relative;
+        h3{
+            &::after{
+                @include create_underline(nth($colors, 1),16%,0,7%,0.5%);
+            }
+        }
+        .gallery_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            img{
+                margin-bottom: 0.2rem;
+            
+            }
+        }
+    }
+}
